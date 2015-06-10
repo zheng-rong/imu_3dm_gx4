@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="imu_3dm_gx3"
+        name="imu"
+        type="imu_3dm_gx3"
+        output="screen">
+    <param name="port" value="/dev/serial/by-id/usb-MicroStrain__Inc._3DM-GX3-35_Orientation_Sensor_6225.01365______-if00"/>
+    <param name="rate" value="115200"/>
+  </node>
+</launch>

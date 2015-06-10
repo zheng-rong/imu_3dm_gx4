@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="imu_3dm_gx"
+        name="imu"
+        type="imu_3dm_gx"
+        output="screen">
+    <param name="port" value="/dev/serial/by-id/usb-Lord_Microstrain_Lord_Inertial_Sensor_0000__6234.42665-if00"/>
+    <param name="rate" value="115200"/>
+  </node>
+</launch>
