@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>imu_3dm_gx</name>
+  <name>imu_3dm_gx3</name>
   <version>0.0.0</version>
-  <description>The imu_3dm_gx package</description>
+  <description>The imu_3dm_gx3 package</description>
 
   <maintainer email="nmichael@cmu.edu">Nathan Michael</maintainer>
   <license>Internal-Use Only</license>

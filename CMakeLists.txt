@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.3)
-project(imu_3dm_gx)
+project(imu_3dm_gx3)
 
 find_package(GeographicLib REQUIRED)
 

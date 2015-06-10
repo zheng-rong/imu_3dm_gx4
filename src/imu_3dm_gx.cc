@@ -7,7 +7,7 @@
 #include <geometry_utils/GeometryUtilsROS.h>
 #include <GeographicLib/NormalGravity.hpp>
 #include <GeographicLib/LocalCartesian.hpp>
-//#include <imu_3dm_gx3/GPSFix.h>
+#include <imu_3dm_gx3/GPSFix.h>
 
 #include <asio_serial_device/ASIOSerialDevice.h>
 
@@ -730,7 +730,7 @@ void sigint_handler(int signum)
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "imu_3dm_gx", ros::init_options::NoSigintHandler);
+  ros::init(argc, argv, "imu_3dm_gx3", ros::init_options::NoSigintHandler);
   signal(SIGINT, sigint_handler);
 
   ros::NodeHandle n("~");
