@@ -3,7 +3,7 @@ project(imu_3dm_gx3)
 
 find_package(GeographicLib REQUIRED)
 
-find_package(catkin REQUIRED
+find_package(catkin REQUIRED COMPONENTS
   message_generation
   roscpp
   sensor_msgs
@@ -45,6 +45,8 @@ add_definitions(
 add_executable(${PROJECT_NAME}
   src/imu_3dm_gx.cc
 )
+
+add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 
 target_link_libraries(${PROJECT_NAME}
   ${catkin_LIBRARIES}
